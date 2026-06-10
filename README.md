@@ -1,118 +1,24 @@
-
-<style>
-.section { margin-bottom: 2rem; }
-.section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
-.badge-row { display: flex; flex-wrap: wrap; gap: 8px; }
-.badge { font-size: 13px; padding: 4px 12px; border-radius: 20px; font-weight: 500; }
-.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 10px; }
-.proj-title { font-size: 14px; font-weight: 500; margin: 0 0 4px; }
-.proj-desc { font-size: 13px; color: var(--color-text-secondary); margin: 0 0 8px; line-height: 1.5; }
-.stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.stat-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; text-align: center; }
-.stat-num { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
-.stat-label { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
-.copy-btn { font-size: 12px; padding: 6px 14px; border-radius: var(--border-radius-md); background: transparent; border: 0.5px solid var(--color-border-secondary); cursor: pointer; color: var(--color-text-secondary); display: inline-flex; align-items: center; gap: 6px; }
-.copy-btn:hover { background: var(--color-background-secondary); }
-pre { background: var(--color-background-secondary); border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); padding: 1rem; font-size: 12px; font-family: var(--font-mono); overflow-x: auto; white-space: pre-wrap; line-height: 1.7; color: var(--color-text-primary); }
-.tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
-.tab { font-size: 13px; padding: 6px 14px; border-radius: 20px; cursor: pointer; border: 0.5px solid var(--color-border-tertiary); background: transparent; color: var(--color-text-secondary); }
-.tab.active { background: var(--color-background-secondary); border-color: var(--color-border-primary); color: var(--color-text-primary); font-weight: 500; }
-</style>
-
-<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">GitHub profile README preview and copy for Mohamed Elafandy</h2>
-
-<div class="tabs">
-  <button class="tab active" onclick="showTab('preview')">Preview</button>
-  <button class="tab" onclick="showTab('markdown')">Markdown to copy</button>
-</div>
-
-<div id="tab-preview">
-
-<div class="section">
-  <p style="font-size:22px;font-weight:500;margin:0 0 4px;">Hi, I'm Mohamed 👋</p>
-  <p style="font-size:15px;color:var(--color-text-secondary);margin:0 0 1rem;">Full-Stack Developer · Node.js · NestJS · React · Next.js · PostgreSQL · MongoDB</p>
-  <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.7;margin:0;">
-    I build secure, scalable backend systems and polished frontend apps. 1+ year of professional experience in multi-tenant SaaS, real-time microservices, and RESTful API design — with a unique dual background in Software Engineering and Accounting & Finance.
-  </p>
-</div>
-
-<div class="stat-grid section">
-  <div class="stat-card"><div class="stat-num">~40%</div><div class="stat-label">API response time reduced</div></div>
-  <div class="stat-card"><div class="stat-num">~60%</div><div class="stat-label">DB load reduced</div></div>
-  <div class="stat-card"><div class="stat-num">25+</div><div class="stat-label">RESTful endpoints built</div></div>
-</div>
-
-<div class="section">
-  <div class="section-title">Tech stack</div>
-  <div class="badge-row">
-    <span class="badge" style="background:#E1F5EE;color:#0F6E56;">Node.js</span>
-    <span class="badge" style="background:#E1F5EE;color:#0F6E56;">NestJS</span>
-    <span class="badge" style="background:#E6F1FB;color:#185FA5;">React.js</span>
-    <span class="badge" style="background:#E6F1FB;color:#185FA5;">Next.js 14</span>
-    <span class="badge" style="background:#EEEDFE;color:#534AB7;">TypeScript</span>
-    <span class="badge" style="background:#EEEDFE;color:#534AB7;">PostgreSQL</span>
-    <span class="badge" style="background:#FAEEDA;color:#854F0B;">MongoDB</span>
-    <span class="badge" style="background:#FAEEDA;color:#854F0B;">Redis</span>
-    <span class="badge" style="background:#F1EFE8;color:#5F5E5A;">Docker</span>
-    <span class="badge" style="background:#F1EFE8;color:#5F5E5A;">JWT / RBAC</span>
-    <span class="badge" style="background:#EAF3DE;color:#3B6D11;">Kafka</span>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Featured projects</div>
-
-  <div class="card">
-    <div class="proj-title">🏫 Teacher Platform — Education SaaS</div>
-    <div class="proj-desc">Tenant-isolated SaaS with JWT auth, QR-based attendance, RBAC, grade management, and PDF exports. NestJS · PostgreSQL · Next.js 14 · Docker</div>
-    <span class="badge" style="background:#EEEDFE;color:#534AB7;font-size:12px;">In progress</span>
-  </div>
-
-  <div class="card">
-    <div class="proj-title">📡 API Abuse — Real-time traffic monitor</div>
-    <div class="proj-desc">Distributed microservices processing high-volume API traffic with Kafka, reducing direct DB load by ~60%. TypeScript · Express · Kafka · Docker</div>
-    <a href="#" style="font-size:12px;color:var(--color-text-info);">View on GitHub ↗</a>
-  </div>
-
-  <div class="card">
-    <div class="proj-title">🐱 Petopia — Cat adoption platform</div>
-    <div class="proj-desc">20+ endpoints for full adoption lifecycle with JWT auth and RBAC, reducing unauthorized access by ~80%. Node.js · MongoDB · Cloudinary</div>
-    <a href="#" style="font-size:12px;color:var(--color-text-info);">View on GitHub ↗</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Currently learning</div>
-  <div class="badge-row">
-    <span class="badge" style="background:#FAEEDA;color:#854F0B;">AWS AI/ML (Udacity Scholar)</span>
-    <span class="badge" style="background:#FAEEDA;color:#854F0B;">Odoo 19 Development</span>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-title">Get in touch</div>
-  <p style="font-size:14px;color:var(--color-text-secondary);margin:0;">📧 mohamedelafandy593@gmail.com &nbsp;·&nbsp; 📍 Alexandria, Egypt &nbsp;·&nbsp; <a href="https://linkedin.com" style="color:var(--color-text-info);">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com" style="color:var(--color-text-info);">GitHub</a></p>
-</div>
-
-</div>
-
-<div id="tab-markdown" style="display:none;">
-  <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 0.75rem;">Copy this into your GitHub profile <code>README.md</code> (replace the GitHub/LinkedIn links with yours):</p>
-  <button class="copy-btn" onclick="copyMd()"><i class="ti ti-copy" aria-hidden="true"></i> Copy markdown</button>
-  <div style="height:10px;"></div>
-  <pre id="md-content"></pre>
-</div>
-
-<script>
-const md = `# Hi, I'm Mohamed Elafandy 👋
-
-**Full-Stack Developer** · Node.js · NestJS · React · Next.js · PostgreSQL · MongoDB
-
-I build secure, scalable backend systems and polished frontend apps — with 1+ year of professional experience in multi-tenant SaaS, real-time microservices, and RESTful API design. Dual background in Software Engineering and Accounting & Finance.
+<h2 align="left">
+  <br>Hi there! <img src="https://user-images.githubusercontent.com/42378118/110234147-e3259600-7f4e-11eb-95be-0c4047144dea.gif" width="30"><br>
+  <br> I'm Mohamed Elafandy, Full-Stack Developer 💻<br>
+  <br>
+  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="500">
+</h2>
 
 ---
 
-## 🚀 Impact highlights
+### 🙋‍♂️ About Me
+
+- 🔭 Currently building **Teacher Platform** — a multi-tenant Education SaaS (NestJS + Next.js 14)
+- 🌱 Learning **AWS AI/ML** (Udacity Scholar) & **Odoo 19 Development**
+- 💼 1+ year professional experience in backend & full-stack development
+- 🎓 Dual background in **Software Engineering** (ALX Africa) & **Accounting & Finance** (Damanhour University)
+- 📍 Alexandria, Egypt
+- 📫 Reach me at: **mohamedelafandy593@gmail.com**
+
+---
+
+### ⚡ Impact Highlights
 
 | Metric | Result |
 |---|---|
@@ -122,61 +28,52 @@ I build secure, scalable backend systems and polished frontend apps — with 1+ 
 
 ---
 
-## 🛠️ Tech stack
+### 🛠️ Tech Stack
 
-**Backend:** Node.js · Express.js · NestJS · REST APIs · Microservices  
-**Frontend:** React.js · Next.js 14 · Vite · Tailwind CSS · Framer Motion  
-**Databases:** PostgreSQL · TypeORM · MongoDB · Mongoose · Redis  
-**Auth & Security:** JWT (Access/Refresh Rotation) · RBAC · HttpOnly Cookies · OTP · bcryptjs  
-**DevOps & Tools:** Docker · Git · Jest · Swagger/OpenAPI · Cloudinary  
-**Languages:** TypeScript · JavaScript (ES6+) · Python · C  
-
----
-
-## 📌 Featured projects
-
-### 🏫 Teacher Platform — Education SaaS *(in progress)*
-Tenant-isolated SaaS platform with JWT auth, QR-based attendance, RBAC, grade management, and PDF exports.  
-\`TypeScript · NestJS · PostgreSQL · TypeORM · Next.js 14 · Docker\`
-
-### 📡 [API Abuse — Real-time traffic monitor](https://github.com/YOUR_USERNAME/api-abuse)
-Distributed microservices processing high-volume API traffic with Kafka, reducing direct DB load by ~60%.  
-\`TypeScript · Express.js · Kafka · Microservices · Docker\`
-
-### 🐱 [Petopia — Cat adoption platform](https://github.com/YOUR_USERNAME/petopia)
-20+ endpoints covering the full adoption lifecycle with JWT, RBAC, and layered security middleware.  
-\`Node.js · Express.js · MongoDB · Cloudinary\`
+<p align="left">
+  <a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/></a>
+  <a href="https://expressjs.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/></a>
+  <a href="https://nestjs.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg" alt="nestjs" width="40" height="40"/></a>
+  <a href="https://reactjs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/></a>
+  <a href="https://nextjs.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/></a>
+  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/></a>
+  <a href="https://www.postgresql.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/></a>
+  <a href="https://www.mongodb.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a>
+  <a href="https://redis.io" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/></a>
+  <a href="https://www.docker.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/></a>
+  <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/></a>
+  <a href="https://www.postman.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/></a>
+  <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/></a>
+  <a href="https://www.w3.org/html/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/></a>
+  <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
+  <a href="https://tailwindcss.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwindcss" width="40" height="40"/></a>
+</p>
 
 ---
 
-## 📚 Currently learning
+### 📌 Featured Projects
 
-- AWS AI & ML Scholars Program (Udacity · AWS Certified AI Practitioner path)
-- Odoo 19 Development — custom modules, ORM, and core framework
+**🏫 Teacher Platform** *(In Progress)*
+> Tenant-isolated Education SaaS — JWT auth, QR attendance, RBAC, grade management, PDF exports
+> `NestJS · PostgreSQL · Next.js 14 · TypeORM · Docker`
+
+**📡 [API Abuse — Real-time API Traffic Monitor](https://github.com/YOUR_USERNAME/api-abuse)**
+> Distributed microservices with Kafka reducing DB load by ~60%
+> `TypeScript · Express.js · Kafka · Docker`
+
+**🐱 [Petopia — Cat Adoption Platform](https://github.com/YOUR_USERNAME/petopia)**
+> 20+ endpoints, JWT + RBAC, ~80% reduction in unauthorized access attempts
+> `Node.js · Express.js · MongoDB · Cloudinary`
 
 ---
 
-## 📫 Get in touch
+### 📫 Connect with Me
 
-📧 mohamedelafandy593@gmail.com · 📍 Alexandria, Egypt  
-[LinkedIn](https://linkedin.com/in/YOUR_PROFILE) · [GitHub](https://github.com/YOUR_USERNAME)
-`;
-
-document.getElementById('md-content').textContent = md;
-
-function showTab(name) {
-  document.getElementById('tab-preview').style.display = name === 'preview' ? 'block' : 'none';
-  document.getElementById('tab-markdown').style.display = name === 'markdown' ? 'block' : 'none';
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.textContent.toLowerCase().includes(name === 'preview' ? 'preview' : 'markdown')));
-}
-
-function copyMd() {
-  navigator.clipboard.writeText(md).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    btn.innerHTML = '<i class="ti ti-check" aria-hidden="true"></i> Copied!';
-    setTimeout(() => { btn.innerHTML = '<i class="ti ti-copy" aria-hidden="true"></i> Copy markdown'; }, 2000);
-  });
-}
-</script>
-
- 
+<p align="left">
+  <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="linkedin" width="40" height="40"/>
+  </a>
+  <a href="mailto:mohamedelafandy593@gmail.com" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="gmail" width="40" height="40"/>
+  </a>
+</p>
